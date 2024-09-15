@@ -51,7 +51,7 @@ body {
 }
 
 .images img {
-  display: flex; 
+  display: flex;
   align-self: center;
   margin: 0 auto;
   width: 100%;
@@ -148,44 +148,44 @@ body {
   opacity: 0;
 } */
 
-#img1:checked ~ .images .image1{
+#img1:checked ~ .images .image1 {
   margin-left: 0;
   /* opacity: 1; */
 }
 /* #img2:checked ~ .images .image1 .meme1{
   margin-left: 0; */
-  /* opacity: 1; */
+/* opacity: 1; */
 /* } */
-#img2:checked ~ .images .image1{
+#img2:checked ~ .images .image1 {
   margin-left: -100%;
   /* opacity: 1; */
 }
-#img3:checked ~ .images .image1{
+#img3:checked ~ .images .image1 {
   margin-left: -200%;
   /* opacity: 1; */
 }
 
-#img4:checked ~ .images .image1{
+#img4:checked ~ .images .image1 {
   margin-left: -300%;
   /* opacity: 1; */
 }
 
-#img1:checked ~ .pannel .texts .text1{
+#img1:checked ~ .pannel .texts .text1 {
   margin-left: 0;
   /* opacity: 1; */
 }
 
-#img2:checked ~ .pannel .texts .text1{
+#img2:checked ~ .pannel .texts .text1 {
   margin-left: -100%;
   /* opacity: 1; */
 }
 
-#img3:checked ~ .pannel .texts .text1{
+#img3:checked ~ .pannel .texts .text1 {
   margin-left: -200%;
   /* opacity: 1; */
 }
 
-#img4:checked ~ .pannel .texts .text1{
+#img4:checked ~ .pannel .texts .text1 {
   margin-left: -300%;
   /* opacity: 1; */
 }
@@ -196,11 +196,15 @@ body {
   }
 }
 
- @media (min-width: 500px) and (max-width: 768px) {
+@media (min-width: 500px) and (max-width: 768px) {
+  .container {
+    max-width: 100%;
+  }
 
   .slider__inner {
-    max-width: 80%;
-    max-height: 80%;
+    max-width: 100%;
+    max-height: 100%;
+    width: 85% !important;
   }
 
   .pannel {
@@ -208,82 +212,73 @@ body {
     display: flex;
     justify-content: space-between;
     row-gap: 1rem;
-}
+  }
 
-   .controls {
+  .controls {
     column-gap: 0.4rem;
-   }
+  }
 
-   .texts p {
+  .texts p {
     font-size: 3.2vw;
-   }
+  }
 
-   .texts {
+  .texts {
     display: flex;
     margin: 0 auto;
-   }
+  }
+}
 
+@media (min-width: 320px) and (max-width: 499px) {
+  .slider__inner {
+    max-width: 100%;
+    max-height: 100%;
+    width: 85% !important;
   }
 
-  @media (min-width: 320px) and (max-width: 499px) {
-
-    .slider__inner {
-      max-width: 90%;
-      max-height: 90%;
-    }
-
-    .pannel {
-      flex-direction: column-reverse;
-      display: flex;
-      justify-content: space-between;
-      row-gap: 1rem;
-  }
-  
-     .controls {
-      column-gap: 0.4rem;
-     }
-  
-     .texts p {
-      font-size: 3.2vw;
-     }
-  
-     .texts {
-      display: flex;
-      margin: 0 auto;
-     }
-
-     .label {
-      display: flex;
-      width: 1.3rem;
-      height: 1.3rem;
-      justify-content: center;
-      align-items: flex-start;
-      object-fit: fill;
-    }
-
-    .button {
-      width: 0.7rem;
-      height: 0.7rem;
-      border-radius: 50%;
-      border: solid #70a0be 0.15rem;
-      background: #70a0be;
-      cursor: pointer;
-      transition: all 0.5s ease;
-    }
+  .pannel {
+    flex-direction: column-reverse;
+    display: flex;
+    justify-content: space-between;
+    row-gap: 1rem;
   }
 
+  .controls {
+    column-gap: 0.4rem;
+  }
 
-/* @media (min-width: 1025px) and (max-width: 1280px) {
- .slider__inner {
-  padding: 3vw 3vw 1rem 3vw;
-  row-gap: 1rem;
-  display: flex;
-  flex-direction: column;
-  max-width: 63.53%;
-  max-height: 40%;
-  overflow: hidden;
-  background: rgb(2, 0, 36);
-  background: url(./img/noise_transparent@2x.svg) top left / 130px repeat,
-    radial-gradient(100% 215.42% at 0% 0%, #5d5d5c 0%, #383838 100%);
-  border-radius: 0.5rem;
+  .texts p {
+    font-size: 3.2vw;
+  }
+
+  .texts {
+    display: flex;
+    margin: 0 auto;
+  }
+
+  .label {
+    display: flex;
+    width: 1.3rem;
+    height: 1.3rem;
+    justify-content: center;
+    align-items: flex-start;
+    object-fit: fill;
+  }
+
+  .button {
+    width: 0.7rem;
+    height: 0.7rem;
+    border-radius: 50%;
+    border: solid #70a0be 0.15rem;
+    background: #70a0be;
+    cursor: pointer;
+    transition: all 0.5s ease;
+  }
+}
+
+@media (max-width: 1024px) {
+  .slider__inner {
+    max-width: 100%;
+    max-height: 100%;
+    width: 79%;
+  }
 }
