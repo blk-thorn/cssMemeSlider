@@ -28,8 +28,6 @@ body {
   align-items: center;
   width: 100%;
   max-width: 94rem;
-  /* height: 100%; */
-  /* background-color: #1e1e1e; */
 }
 
 .slider__inner {
@@ -43,10 +41,10 @@ body {
   max-height: 40%;
   overflow: hidden;
   background: rgb(2, 0, 36);
-  background: url(./img/noise_transparent@2x.svg) top left / 130px repeat,
+  background: url(./img/noise_transparent@2x.svg) top left / 8rem repeat,
     radial-gradient(100% 215.42% at 0% 0%, #5d5d5c 0%, #383838 100%);
   border-radius: 0.5rem;
-  box-shadow: 0px 0px 10px 8px rgba(62, 62, 62, 0.4);
+  box-shadow: 0rem 0rem 1rem 0.5rem rgba(62, 62, 62, 0.4);
 }
 
 .images {
@@ -128,6 +126,12 @@ body {
 .label:hover > .button {
   border: 0.1rem solid #fff;
   background: #fff;
+  cursor: pointer;
+}
+
+.label:active > .button {
+  border: 0.1rem solid #b7b7b7;
+  background: #b7b7b7;
   cursor: pointer;
 }
 
