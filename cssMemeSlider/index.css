@@ -44,7 +44,7 @@ body {
   background: url(./img/noise_transparent@2x.svg) top left / 8rem repeat,
     radial-gradient(100% 215.42% at 0% 0%, #5d5d5c 0%, #383838 100%);
   border-radius: 0.5rem;
-  box-shadow: 0rem 0rem 1rem 0.5rem rgba(62, 62, 62, 0.4);
+  box-shadow: 0 0 1rem 0.5rem rgba(62, 62, 62, 0.4);
 }
 
 .images {
@@ -153,55 +153,35 @@ body {
   cursor: default;
 }
 
-/* .text1,
-.text2,
-.text3,
-.text4 {
-  opacity: 0;
-}
-.image1,
-.image2,
-.image3,
-.image5 {
-  opacity: 0;
-} */
-
 #img1:checked ~ .images .image1 {
   margin-left: 0;
 }
 
 #img2:checked ~ .images .image1 {
   margin-left: -100%;
-  /* opacity: 1; */
 }
 #img3:checked ~ .images .image1 {
   margin-left: -200%;
-  /* opacity: 1; */
 }
 
 #img4:checked ~ .images .image1 {
   margin-left: -300%;
-  /* opacity: 1; */
 }
 
 #img1:checked ~ .pannel .texts .text1 {
   margin-left: 0;
-  /* opacity: 1; */
 }
 
 #img2:checked ~ .pannel .texts .text1 {
   margin-left: -100%;
-  /* opacity: 1; */
 }
 
 #img3:checked ~ .pannel .texts .text1 {
   margin-left: -200%;
-  /* opacity: 1; */
 }
 
 #img4:checked ~ .pannel .texts .text1 {
   margin-left: -300%;
-  /* opacity: 1; */
 }
 
 @media (min-width: 769px) and (max-width: 1240px) {
